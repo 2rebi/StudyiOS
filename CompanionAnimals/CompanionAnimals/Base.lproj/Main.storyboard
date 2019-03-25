@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="d6b-mz-rlm">
+            <objects>
+                <viewController id="ljr-Uy-ffn" customClass="MainViewController" customModule="CompanionAnimals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dAM-q0-xml">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vc-sh-H71">
+                                <rect key="frame" x="20" y="40" width="157.5" height="157.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Vc-sh-H71" secondAttribute="height" multiplier="1:1" id="kBy-oX-G2D"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="dog"/>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwO-NI-VgP">
+                                <rect key="frame" x="197.5" y="40" width="157.5" height="157.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UwO-NI-VgP" secondAttribute="height" multiplier="1:1" id="P4V-fv-CYD"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="cat"/>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejd-wg-SZf">
+                                <rect key="frame" x="20" y="217.5" width="157.5" height="157.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ejd-wg-SZf" secondAttribute="height" multiplier="1:1" id="Ait-Pp-J6C"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="rabbit"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhl-az-Cin">
+                                <rect key="frame" x="20" y="405" width="335" height="30"/>
+                                <state key="normal" title="만든이"/>
+                            </button>
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dR-2A-TWx">
+                                <rect key="frame" x="197.5" y="217.5" width="157.5" height="157.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7dR-2A-TWx" secondAttribute="height" multiplier="1:1" id="Bb4-ek-oxT"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="hedgehog"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Vc-sh-H71" firstAttribute="top" secondItem="bIB-R9-xzW" secondAttribute="top" constant="20" id="3Tf-kf-jTw"/>
+                            <constraint firstItem="zhl-az-Cin" firstAttribute="top" secondItem="ejd-wg-SZf" secondAttribute="bottom" constant="30" id="5s5-sW-XXj"/>
+                            <constraint firstItem="zhl-az-Cin" firstAttribute="trailing" secondItem="7dR-2A-TWx" secondAttribute="trailing" id="Amc-yd-Yrq"/>
+                            <constraint firstItem="7dR-2A-TWx" firstAttribute="trailing" secondItem="UwO-NI-VgP" secondAttribute="trailing" id="CA8-Bk-6iN"/>
+                            <constraint firstItem="7dR-2A-TWx" firstAttribute="top" secondItem="UwO-NI-VgP" secondAttribute="bottom" constant="20" id="LYq-5M-SJf"/>
+                            <constraint firstItem="4Vc-sh-H71" firstAttribute="leading" secondItem="bIB-R9-xzW" secondAttribute="leading" constant="20" id="PdQ-Jz-oAb"/>
+                            <constraint firstItem="7dR-2A-TWx" firstAttribute="leading" secondItem="UwO-NI-VgP" secondAttribute="leading" id="QHs-rN-X75"/>
+                            <constraint firstItem="4Vc-sh-H71" firstAttribute="width" secondItem="UwO-NI-VgP" secondAttribute="width" id="RQt-hv-sQU"/>
+                            <constraint firstItem="UwO-NI-VgP" firstAttribute="top" secondItem="4Vc-sh-H71" secondAttribute="top" id="Ty5-hy-yGJ"/>
+                            <constraint firstItem="ejd-wg-SZf" firstAttribute="leading" secondItem="4Vc-sh-H71" secondAttribute="leading" id="Urg-Xr-AxW"/>
+                            <constraint firstAttribute="trailing" secondItem="UwO-NI-VgP" secondAttribute="trailing" constant="20" id="Uuv-nZ-aFq"/>
+                            <constraint firstItem="bIB-R9-xzW" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zhl-az-Cin" secondAttribute="bottom" constant="30" id="Z8n-fx-MMl"/>
+                            <constraint firstItem="zhl-az-Cin" firstAttribute="leading" secondItem="ejd-wg-SZf" secondAttribute="leading" id="eSD-9a-g7K"/>
+                            <constraint firstItem="UwO-NI-VgP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4Vc-sh-H71" secondAttribute="trailing" constant="20" id="gbe-SA-upb"/>
+                            <constraint firstItem="ejd-wg-SZf" firstAttribute="trailing" secondItem="4Vc-sh-H71" secondAttribute="trailing" id="nz1-N7-Tx3"/>
+                            <constraint firstItem="ejd-wg-SZf" firstAttribute="top" secondItem="4Vc-sh-H71" secondAttribute="bottom" constant="20" id="uKb-gk-0kf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bIB-R9-xzW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="36E-Cr-HEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55.200000000000003" y="65.217391304347828"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat" width="330" height="330"/>
+        <image name="dog" width="330" height="330"/>
+        <image name="hedgehog" width="330" height="330"/>
+        <image name="rabbit" width="330" height="330"/>
+    </resources>
+</document>
